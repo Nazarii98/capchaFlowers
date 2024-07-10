@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Captcha</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Choose 3 most</h1>
+      <h1 id="subtitle">beautiful flowers</h1>
+      <div class="captcha-container" id="captcha-container">
+        <div class="captcha-images">
+          <img
+            src="https://shop.camellia.ua/upload/kamelia_flora/photos/0f/74/1200x1200/37e9832_5cf0f5cfc687a.JPG"
+            alt="Зображення 1"
+            onclick="selectImage(this)"
+          />
+          <img
+            src="https://viaflor.com.ua/edit/uploads/page/1413/6510bb75a595b.jpg"
+            alt="Зображення 2"
+            onclick="selectImage(this)"
+          />
+          <img
+            src="https://dobrodar.ua/uploads/files/Products/Product_images_40920/403407.jpg"
+            alt="Зображення 3"
+            onclick="selectImage(this)"
+          />
+          <img
+            src="https://flowers.ua/images/Flowers/ext/1160_1.jpg"
+            alt="Зображення 4"
+            onclick="selectImage(this)"
+          />
+          <img
+            src="https://yaskravaklumba.com.ua/image/cache/catalog/osen/tulpan/multiflora/wallflower-500x500.jpg"
+            alt="Зображення 5"
+            onclick="selectImage(this)"
+          />
+          <img
+            src="https://kamelia-shop.com.ua/_files/goods/rose/r00912/img715.jpg"
+            alt="Зображення 6"
+            onclick="selectImage(this)"
+          />
+          <img
+            src="https://camellia-market.com.ua/image/cache/catalog/importn/pion/buketspionov-auto_width_1333.jpg"
+            alt="Зображення 7"
+            onclick="selectImage(this)"
+          />
+          <img
+            src="https://decorize.com.ua/image/catalog/2021/08.2021/DSC_6927.JPG"
+            alt="Зображення 8"
+            onclick="selectImage(this)"
+          />
+          <img
+            src="https://shop.camellia.ua/upload/kamelia_flora/photos/24/2f/1200x1200/188accb0_5cf0f1913c704.JPG"
+            alt="Зображення 9"
+            onclick="selectImage(this)"
+          />
+        </div>
+        <button onclick="submitCaptcha()">Check</button>
+      </div>
+      <div id="result-message" class="hidden">
+        The most beautiful flower is you
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
